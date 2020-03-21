@@ -33,6 +33,11 @@ a:visited {
   color: inherit;
 }
 
+#homepage {
+  margin: 30px;
+  text-decoration: none;
+}
+
 header {
   height: 150px;
   padding-top: 80px;
