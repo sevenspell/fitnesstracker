@@ -119,6 +119,12 @@ async function handleFormSubmit(event) {
   toast.classList.add("success");
 }
 
+function handleFormComplete(event) {
+  event.preventDefault();
+  clearInputs();
+  toast.classList.add("success");
+}
+
 function handleToastAnimationEnd() {
   toast.removeAttribute("class");
   if (shouldNavigateAway) {
@@ -143,7 +149,8 @@ if (workoutTypeSelect) {
 if (completeButton) {
   completeButton.addEventListener("click", function (event) {
     shouldNavigateAway = true;
-    handleFormSubmit(event);
+    // handleFormSubmit(event);
+    handleFormComplete(event);
   });
 }
 if (addButton) {
