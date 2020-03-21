@@ -1,51 +1,28 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# Unit 17 Nosql Homework: Fitness Workout Tracker
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+Github link: https://github.com/sevenspell/week17-assignment
+Heroku app link: https://week17fitnesstracker.herokuapp.com/
 
-## User Story
+## Description 
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+This project is to create a fitness tracker app that allows users to create new workouts, and add in as many exercises as they want into a workout. It records the type of exercise, the duration of it, and the other metrics such as distance if it's a cardio type of exercise, or number of reps, sets, weight of weights used etc. Users can also choose to add on exercises to the last workout, or create an entirely new workout. The latest summation of the metrics of the last workout will then be shown on the homepage for users to keep track. 
 
-## Business Context
+There is also a dashboard that shows the metrics in pie charts and graphs. This allows users to have a good overall view of their workouts.
 
-A consumer will reach their fitness goals quicker when they track their workout progress.
+## Usage 
 
-## Acceptance Criteria
+1. Go to Heroku app link: https://week17fitnesstracker.herokuapp.com/. You will see the aggregated exercise data from the last workout.
+https://github.com/sevenspell/week17-assignment/blob/master/screenshots/Screenshot1.png
+2. Click on 'New Workout' to create a new workout. It will bring you to the exercise page.
+https://github.com/sevenspell/week17-assignment/blob/master/screenshots/Screenshot2.png
+3. Select exercise type. Fill in the fields and click on 'Add Exercise'.
+https://github.com/sevenspell/week17-assignment/blob/master/screenshots/Screenshot3.png
+4. Select the other exercise type. Fill in the fields and click on 'Add Exercise'. Click on 'Complete' when you don't have any more exercises to add.
+https://github.com/sevenspell/week17-assignment/blob/master/screenshots/Screenshot4.png
+5. It will bring you to the homepage and it will show the aggregated numbers of the exercises in the last workout you created.
+https://github.com/sevenspell/week17-assignment/blob/master/screenshots/Screenshot5.png
+6. Click on 'Dashboard' to see graphs and pie charts of your workout data.
+https://github.com/sevenspell/week17-assignment/blob/master/screenshots/Screenshot6.png
 
-When the user loads the page, they should be given the option to create a new workout, or continue with their last workout.
 
-The user should be able to:
 
-  * Add exercises to a previous workout plan.
-
-  * Add new exercises to a new workout plan.
-
-  * View multiple the combined weight of multiple exercises on the `stats` page.
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-Follow these guidelines for committing:
-
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-* Test your application before you commit to ensure functionality at every step in the development process
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the Github repository
